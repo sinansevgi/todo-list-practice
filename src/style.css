@@ -44,9 +44,14 @@ li {
 .today-td,
 .add-td,
 .task,
+.task-div,
 .center {
   position: relative;
   display: flex;
+}
+
+.task-div {
+  width: 100%;
 }
 
 .color-gray {

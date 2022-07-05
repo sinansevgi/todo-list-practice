@@ -1,4 +1,6 @@
 import './style.css';
+import * as dragDropSort from './drag_drop_sort.js';
+// import * as statusUpdate from './status_update.js';
 
 const tasks = [
   {
@@ -48,9 +50,18 @@ function simpleTasks(tasks) {
 
     btn.classList.add('actions');
 
-    task.appendChild(checkbox);
-    task.appendChild(label);
-    task.appendChild(btn);
+    const taskDiv = document.createElement('div');
+
+    taskDiv.appendChild(checkbox);
+    taskDiv.appendChild(label);
+    taskDiv.appendChild(btn);
+
+    taskDiv.draggable = true;
+    taskDiv.ondragstart = dragDropSort.dragDrop();
+
+    taskDiv.classList.add('task-div');
+
+    task.appendChild(taskDiv);
 
     task.classList.add('task');
 
