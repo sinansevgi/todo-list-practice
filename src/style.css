@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+
+body,
+.bg-btn {
+  background-color: #f1f2f5;
+}
+
+button,
+.todo-list {
+  background: none;
+  border: none;
+}
+
+h2,
+.task-label {
+  width: 96%;
+}
+
+h2,
+ul,
+li,
+button {
+  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.today-td,
+.add-td,
+ul,
+li {
+  border-bottom: 1px solid #f1f2f5;
+}
+
+.todo {
+  margin: 10%;
+  background-color: white;
+  width: 25%;
+  border: 2px outset ghostwhite;
+}
+
+.today-td,
+.add-td,
+.task,
+.task-div,
+.center {
+  position: relative;
+  display: flex;
+}
+
+.task-div {
+  width: 100%;
+}
+
+.color-gray {
+  color: gray;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.todo,
+.todo-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+ul,
+h2,
+.task {
+  padding: 5px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.task-label {
+  margin-left: 5px;
+}
+
+.refresh,
+.insert,
+.actions {
+  float: right;
+  width: 4%;
+}
+
+.refresh {
+  background: url('./refresh.svg') no-repeat 5% 50% / 55%;
+}
+
+.insert {
+  background: url('./insert.svg') no-repeat 5% 50% / 55%;
+}
+
+.actions {
+  background: url('./actions.svg') no-repeat 65% 50% / 55%;
+}
